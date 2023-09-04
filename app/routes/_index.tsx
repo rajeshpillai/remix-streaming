@@ -16,7 +16,7 @@ const fetchDescription = () =>
   );
 
 const commentsFetch = async () => {
-  await new Promise((res) => setTimeout(res, 5000));
+  await new Promise((res) => setTimeout(res, 3000));
   const resp = await fetch('https://jsonplaceholder.typicode.com/users/1/todos');
   const todos = await resp.json();
   return todos;
